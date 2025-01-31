@@ -1,0 +1,244 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Section */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #218838;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 33px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-info a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+.navbar-language select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #218838;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-language select:hover {
+    color: #ffcc00;
+}
+
+.navbar-login a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.navbar-login a:hover {
+    background-color: #ffcc00;
+    color: #4CAF50;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 14px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .navbar-search .search-button {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Gallery container */
+.gallery {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Grid layout for gallery items */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 15px;
+}
+
+/* Individual gallery item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px; /* Fixed height for all images */
+}
+
+/* Ensure images cover the container while maintaining aspect ratio */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    display: block;
+}
+
+/* Download button */
+.download-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover .download-btn {
+    opacity: 1;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #218838; /* Footer background color */
+    color: white; /* Font color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure footer stays at bottom of content */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit max width for content */
+    margin: 0 auto; /* Center align content horizontally */
+    padding: 0 20px; /* Padding for left and right */
+}
+
+.footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size */
+}
+
+.footer-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

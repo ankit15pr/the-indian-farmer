@@ -1,0 +1,257 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Section */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #218838;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 33px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-info a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+.navbar-language select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #218838;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-language select:hover {
+    color: #ffcc00;
+}
+
+.navbar-login a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.navbar-login a:hover {
+    background-color: #ffcc00;
+    color: #4CAF50;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 14px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .navbar-search .search-button {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Search Section */
+.search-section {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 60%; /* Adjust width as needed */
+    max-width: 600px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 12px;
+    position: relative;
+}
+
+.card img {
+    width: 90%;
+    height: 250px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+    margin: 1px 0;
+    font-size: 18px;
+}
+
+.card p {
+    padding: 0 3px 3px;
+    font-size: 14px;
+    color: #555;
+}
+
+.card .company-name {
+    font-weight: bold;
+}
+
+
+.card .average-yield {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+
+.card button.buy-now:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #4CAF50;
+    color: #ecf0f1;
+    padding: 2px ;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+

@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px 0; */
+}
+
+/* Header Section */
+.header {
+    background-color: #218838;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.category-buttons button {
+    background-color: #218838;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #2ecc71;
+}
+
+/* Disease Section */
+.disease-section {
+    padding: 40px 0;
+}
+
+.disease-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.disease-card:hover {
+    transform: translateY(-10px);
+}
+
+.disease-image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin: 20px 20px 20px 20px;
+    border-radius: 5px;
+}
+
+.disease-info {
+    padding: 20px;
+    width: 60%;
+}
+
+.disease-info h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.disease-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.disease-info strong {
+    font-weight: 600;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #27ae60;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .category-buttons {
+        flex-direction: column;
+    }
+
+    .category-buttons button {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .disease-card {
+        flex-direction: column;
+    }
+
+    .disease-image {
+        width: 100%;
+    }
+
+    .disease-info {
+        width: 100%;
+        text-align: center;
+    }
+}

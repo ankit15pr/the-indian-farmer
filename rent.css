@@ -1,0 +1,262 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Section */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #218838;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 33px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-info a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+.navbar-language select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #218838;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-language select:hover {
+    color: #ffcc00;
+}
+
+.navbar-login a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.navbar-login a:hover {
+    background-color: #ffcc00;
+    color: #4CAF50;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 14px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .navbar-search .search-button {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Search Section */
+.search-section {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 60%; /* Adjust width as needed */
+    max-width: 600px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.heading{
+    margin-top: 20px;
+}
+
+/*Cards Css */
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 15px;
+}
+.card-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+.card-content p {
+    color: #666;
+    margin: 8px 0;
+}
+.rent-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+.rent-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #4CAF50;
+    color: #ecf0f1;
+    padding: 2px ;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}

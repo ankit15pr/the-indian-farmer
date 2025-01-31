@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="community.css">
+    <title>Community</title>
+</head>
+<body>
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <img src="images/farmer.png" alt="Indian Farmer Logo" class="logo">
+                    <span class="brand-name">भारतीय किसान</span>
+                </div>
+            </div>
+            <div class="navbar-center">
+
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-info">
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="navbar-language">
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+                <div class="navbar-login">
+                    <a href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="logo-left">
+                <img src="background images/indian-flag.png" alt="Government Logo 1">
+            </div>
+            <div class="title">
+                <h1>कृषि तथा किसान कल्याण , हरियाणा</h1>
+                <h2>AGRICULTURE AND FARMERS WELFARE, HARYANA</h2>
+            </div>
+            <div class="logo-right">
+                <img src="background images/grain-image.jpg" alt="Government Logo 2">
+                <img src="background images/india-map.png" alt="150 Years of Mahatma">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Post Section -->
+            <section class="posts">
+                <h2>Community Posts</h2>
+                <div class="post-form">
+                    <textarea id="post-content" rows="5" placeholder="Share your thoughts..."></textarea>
+                    <button id="post-button">Post</button>
+                </div>
+                <div id="post-list">
+                    <!-- Posts will be dynamically added here -->
+                </div>
+                <a href="posts.html">View all posts</a>
+            </section>
+
+            <!-- Chat Section -->
+            <section class="chat">
+                <h2>Live Chat</h2>
+                <div id="chat-window">
+                    <!-- Chat messages will be dynamically added here -->
+                </div>
+                <div class="chat-form">
+                    <input type="text" id="chat-message" placeholder="Type a message...">
+                    <button id="send-chat-button">Send</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agriculture Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="community.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horticulture</title>
+    <link rel="stylesheet" href="horticulture.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="navbar-logo">
+                    <img src="images/farmer.png" alt="Indian Farmer Logo" class="logo">
+                    <span class="brand-name">भारतीय किसान</span>
+                </div>
+            </div>
+            <div class="navbar-center">
+
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-info">
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+                <div class="navbar-language">
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header-container">
+            <div class="logo-left">
+                <img src="background images/indian-flag.png" alt="Government Logo 1">
+            </div>
+            <div class="title">
+                <h1>कृषि तथा किसान कल्याण , हरियाणा</h1>
+                <h2>AGRICULTURE AND FARMERS WELFARE, HARYANA</h2>
+            </div>
+            <div class="logo-right">
+                <img src="background images/grain-image.jpg" alt="Government Logo 2">
+                <img src="background images/india-map.png" alt="150 Years of Mahatma">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="nav-buttons">
+            <button onclick="showSection('vegetables')">Vegetables</button>
+            <button onclick="showSection('fruits')">Fruits</button>
+            <button onclick="showSection('floriculture')">Floriculture</button>
+        </div>
+        
+        <!-- Vegetables Section -->
+        <div id="vegetables" class="section active">
+            <h2>Vegetables</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="horticulture/vegetable1.jpg" alt="Carrot">
+                    <div class="card-info">
+                        <h3>Carrot</h3>
+                        <p><strong>Timing:</strong> Spring to early summer</p>
+                        <p><strong>Varieties:</strong> Nantes, Danvers, Chantenay</p>
+                        <p><strong>Climate Required:</strong> Cool weather, 60-70°F (15-21°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Balanced NPK, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, keep soil consistently moist</p>
+                        <p><strong>Growth Period:</strong> 70-80 days</p>
+                        <p><strong>Yield Potential:</strong> 2-3 lbs per square foot</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/vegetable2.jpg" alt="Potato">
+                    <div class="card-info">
+                        <h3>Potato</h3>
+                        <p><strong>Timing:</strong> Early spring to mid-summer</p>
+                        <p><strong>Varieties:</strong> Russet, Yukon Gold, Red Pontiac</p>
+                        <p><strong>Climate Required:</strong> Cool temperatures, 45-75°F (7-24°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Nitrogen-rich fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Consistent moisture, avoid waterlogging</p>
+                        <p><strong>Growth Period:</strong> 70-120 days</p>
+                        <p><strong>Yield Potential:</strong> 10-20 lbs per plant</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/vegetable3.jpg" alt="Tomato">
+                    <div class="card-info">
+                        <h3>Tomato</h3>
+                        <p><strong>Timing:</strong> Late spring to summer</p>
+                        <p><strong>Varieties:</strong> Roma, Cherry, Beefsteak</p>
+                        <p><strong>Climate Required:</strong> Warm weather, 70-85°F (21-29°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Balanced NPK, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, avoid overhead irrigation</p>
+                        <p><strong>Growth Period:</strong> 60-85 days</p>
+                        <p><strong>Yield Potential:</strong> 10-20 lbs per plant</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/vegetable4.jpg" alt="Spinach">
+                    <div class="card-info">
+                        <h3>Spinach</h3>
+                        <p><strong>Timing:</strong> Spring and fall</p>
+                        <p><strong>Varieties:</strong> Bloomsdale, Tyee, New Zealand</p>
+                        <p><strong>Climate Required:</strong> Cool weather, 50-70°F (10-21°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Nitrogen-rich fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, keep soil moist</p>
+                        <p><strong>Growth Period:</strong> 40-50 days</p>
+                        <p><strong>Yield Potential:</strong> 2-3 lbs per square foot</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/vegetable5.jpg" alt="Broccoli">
+                    <div class="card-info">
+                        <h3>Broccoli</h3>
+                        <p><strong>Timing:</strong> Spring or fall</p>
+                        <p><strong>Varieties:</strong> Calabrese, Romanesco, Broccoli Rabe</p>
+                        <p><strong>Climate Required:</strong> Cool weather, 60-70°F (15-21°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Balanced NPK, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, keep soil evenly moist</p>
+                        <p><strong>Growth Period:</strong> 70-100 days</p>
+                        <p><strong>Yield Potential:</strong> 2-3 lbs per plant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fruits Section -->
+        <div id="fruits" class="section">
+            <h2>Fruits</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="horticulture/fruit1.jpg" alt="Apple">
+                    <div class="card-info">
+                        <h3>Apple</h3>
+                        <p><strong>Timing:</strong> Late summer to early fall</p>
+                        <p><strong>Varieties:</strong> Fuji, Gala, Honeycrisp</p>
+                        <p><strong>Climate Required:</strong> Temperate regions, 32-45°F (0-7°C) in winter</p>
+                        <p><strong>Fertilizers Required:</strong> Nitrogen-rich fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Deep watering, avoid waterlogging</p>
+                        <p><strong>Growth Period:</strong> 6-8 months from flowering to harvest</p>
+                        <p><strong>Yield Potential:</strong> 300-600 lbs per tree</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/fruit2.jpg" alt="Banana">
+                    <div class="card-info">
+                        <h3>Banana</h3>
+                        <p><strong>Timing:</strong> Year-round in tropical climates</p>
+                        <p><strong>Varieties:</strong> Cavendish, Plantain, Red Banana</p>
+                        <p><strong>Climate Required:</strong> Tropical, 75-95°F (24-35°C)</p>
+                        <p><strong>Fertilizers Required:</strong> High potassium fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, keep soil moist</p>
+                        <p><strong>Growth Period:</strong> 9-12 months from planting to harvest</p>
+                        <p><strong>Yield Potential:</strong> 30-40 lbs per plant</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/fruit3.jpg" alt="Orange">
+                    <div class="card-info">
+                        <h3>Orange</h3>
+                        <p><strong>Timing:</strong> Winter to early spring</p>
+                        <p><strong>Varieties:</strong> Navel, Valencia, Blood Orange</p>
+                        <p><strong>Climate Required:</strong> Subtropical to tropical, 55-90°F (13-32°C)</p>
+                        <p><strong>Fertilizers Required:</strong> Citrus-specific fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Deep watering, avoid waterlogging</p>
+                        <p><strong>Growth Period:</strong> 7-12 months from flowering to harvest</p>
+                        <p><strong>Yield Potential:</strong> 100-200 lbs per tree</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="horticulture/fruit4.jpg" alt="Mango">
+                    <div class="card-info">
+                        <h3>Mango</h3>
+                        <p><strong>Timing:</strong> Summer to early fall</p>
+                        <p><strong>Varieties:</strong> Alphonso, Haden, Tommy Atkins</p>
+                        <p><strong>Climate Required:</strong> Tropical, 77-95°F (25-35°C)</p>
+                        <p><strong>Fertilizers Required:</strong> High potassium and phosphorus fertilizers, compost</p>
+                        <p><strong>Irrigation:</strong> Regular watering, avoid waterlogging</p>
+                        <p><strong>Growth Period:</strong> 3-6 months from flowering to harvest</p>
+                        <p><strong>Yield Potential:</strong> 200-300 lbs per tree</p>
+                    </div>
+                </div>
+                
+                <!-- Fruits Section (continued) -->
+            <div class="card">
+                <img src="horticulture/fruit5.jpg" alt="Grapes">
+                <div class="card-info">
+                    <h3>Grapes</h3>
+                    <p><strong>Timing:</strong> Late summer to early fall</p>
+                    <p><strong>Varieties:</strong> Concord, Thompson Seedless, Cabernet Sauvignon</p>
+                    <p><strong>Climate Required:</strong> Temperate to subtropical, 65-85°F (18-29°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Balanced NPK fertilizers, compost</p>
+                    <p><strong>Irrigation:</strong> Regular watering, ensure good drainage</p>
+                    <p><strong>Growth Period:</strong> 4-6 months from flowering to harvest</p>
+                    <p><strong>Yield Potential:</strong> 10-20 lbs per vine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floriculture Section -->
+    <div id="floriculture" class="section">
+        <h2>Floriculture</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="horticulture/flower1.jpg" alt="Rose">
+                <div class="card-info">
+                    <h3>Rose</h3>
+                    <p><strong>Timing:</strong> Late spring to fall</p>
+                    <p><strong>Varieties:</strong> Hybrid Tea, Floribunda, Climbing</p>
+                    <p><strong>Climate Required:</strong> Mild to warm climates, 65-75°F (18-24°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Rose-specific fertilizers, compost</p>
+                    <p><strong>Irrigation:</strong> Regular watering, avoid wetting foliage</p>
+                    <p><strong>Growth Period:</strong> 2-3 months to bloom</p>
+                    <p><strong>Yield Potential:</strong> High, with continuous blooms</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="horticulture/flower2.jpg" alt="Sunflower">
+                <div class="card-info">
+                    <h3>Sunflower</h3>
+                    <p><strong>Timing:</strong> Late spring to early summer</p>
+                    <p><strong>Varieties:</strong> Giant, Dwarf, Teddy Bear</p>
+                    <p><strong>Climate Required:</strong> Warm weather, 70-85°F (21-29°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Balanced NPK, compost</p>
+                    <p><strong>Irrigation:</strong> Regular watering, especially during dry spells</p>
+                    <p><strong>Growth Period:</strong> 70-90 days</p>
+                    <p><strong>Yield Potential:</strong> High, with multiple blooms per plant</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="horticulture/flower3.jpg" alt="Marigold">
+                <div class="card-info">
+                    <h3>Marigold</h3>
+                    <p><strong>Timing:</strong> Spring to fall</p>
+                    <p><strong>Varieties:</strong> French, African, Signet</p>
+                    <p><strong>Climate Required:</strong> Warm weather, 65-75°F (18-24°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Balanced fertilizers, compost</p>
+                    <p><strong>Irrigation:</strong> Regular watering, avoid waterlogging</p>
+                    <p><strong>Growth Period:</strong> 50-60 days</p>
+                    <p><strong>Yield Potential:</strong> High, with continuous blooms</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="horticulture/flower4.jpg" alt="Lily">
+                <div class="card-info">
+                    <h3>Lily</h3>
+                    <p><strong>Timing:</strong> Late spring to summer</p>
+                    <p><strong>Varieties:</strong> Asiatic, Oriental, Trumpet</p>
+                    <p><strong>Climate Required:</strong> Mild to cool weather, 60-70°F (15-21°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Bulb fertilizers, compost</p>
+                    <p><strong>Irrigation:</strong> Regular watering, avoid waterlogging</p>
+                    <p><strong>Growth Period:</strong> 60-90 days</p>
+                    <p><strong>Yield Potential:</strong> High, with multiple flowers per bulb</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="horticulture/flower5.jpg" alt="Lotus">
+                <div class="card-info">
+                    <h3>Lotus</h3>
+                    <p><strong>Timing:</strong> Summer</p>
+                    <p><strong>Varieties:</strong> Sacred Lotus, American Lotus</p>
+                    <p><strong>Climate Required:</strong> Warm climates, 70-90°F (21-32°C)</p>
+                    <p><strong>Fertilizers Required:</strong> Aquatic plant fertilizers, compost</p>
+                    <p><strong>Irrigation:</strong> Requires standing water, keep soil submerged</p>
+                    <p><strong>Growth Period:</strong> 70-120 days</p>
+                    <p><strong>Yield Potential:</strong> High, with multiple blooms per plant</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-bottom">
+        <p>
+            सशक्त किसान, समृद्ध भारत!</p>
+    </div>
+</footer>
+    
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Initialize the page to show the first section by default
+        showSection('vegetables');
+    </script>
+</body>
+</html>

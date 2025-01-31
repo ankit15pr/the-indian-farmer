@@ -1,0 +1,660 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #006400;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-left img,
+.logo-right img {
+    max-height: 80px;
+    width: auto;
+}
+
+.title {
+    text-align: center;
+    color: #006400;
+}
+
+.title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.title h2 {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-left img,
+    .logo-right img {
+        max-height: 60px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .title h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-left, .logo-right {
+        display: none;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 14px;
+    }
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color: #218838;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 450px;
+    height: 33px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-info a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-info a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+.navbar-language select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #218838;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navbar-language select:hover {
+    color: #ffcc00;
+}
+
+.navbar-login a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.navbar-login a:hover {
+    background-color: #ffcc00;
+    color: #4CAF50;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar-left, .navbar-right {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .navbar-center {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .navbar-info a, .navbar-language select, .navbar-login a {
+        font-size: 14px;
+    }
+
+    .navbar-search input {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .navbar-search .search-button {
+        font-size: 14px;
+    }
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0px 20px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* margin-top: 10px; */
+}
+
+.feature i {
+    font-size: 50px;
+    color: #218838;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feature-link {
+    font-size: 16px;
+    color: #218838;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.feature-link:hover {
+    color: #ffcc00;
+}
+
+.govt-scheme {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* scheme card css */
+.scheme-card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: -50px; */
+}
+
+.scheme-card img {
+    margin-left: 30px;
+    height: 200px;
+    width: 350px;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+/* Header for the card */
+.scheme-card h2 {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Container for scrolling schemes */
+.scroll-container {
+    height: 150px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling the list of schemes */
+.scheme-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* List items style */
+.scheme-list li {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #333;
+}
+
+.scheme-list li:hover {
+    color: red;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .scheme-card {
+        flex-direction: column; /* Stack elements vertically on tablets and small desktops */
+        text-align: center;
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .scheme-card img {
+        max-width: 100%; /* Ensure image scales down properly */
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+
+    .scheme-card h2 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .scheme-card {
+        padding: 5px; /* Further reduce padding on mobile devices */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .scheme-card img {
+        max-width: 100%; /* Ensure image scales down on mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .scheme-card h2 {
+        font-size: 16px; /* Smaller font size for mobile devices */
+    }
+
+    .scroll-container {
+        height: auto; /* Adjust height for better visibility */
+    }
+
+    .scheme-list li {
+        font-size: 14px; /* Smaller font size for mobile devices */
+    }
+}
+
+
+/* Vertical scrolling animation */
+@keyframes scrollVertical {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Applying the vertical scroll animation */
+.scheme-list {
+    animation: scrollVertical 8s linear infinite;
+}
+
+/* Pause animation on hover */
+.scheme-list:hover {
+    animation-play-state: paused;
+}
+
+/* page-3 css */
+
+.card-container-3 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-3 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    height: 420px;
+    text-align: center;
+}
+
+.card-3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-3 h3 {
+    margin: 8px 0 10px;
+    font-size: 24px;
+}
+
+.card-3 p {
+    padding: 0 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.card-3 a {
+    display: inline-block;
+    margin: 6px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card-3 a:hover {
+    background-color: #218838;
+}
+
+
+/* Gallery Card CSS */
+.gallery-card {
+    display: flex;
+    flex-direction: row; /* Default direction for larger screens */
+    justify-content: space-between;
+    align-items: center;
+    width: 92.5%;
+    background-color: #218838;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 58px;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.gallery-card img {
+    width: 50%; /* Responsive width */
+    height: 300px; /* Fixed height, consider using auto if you prefer aspect ratio */
+    object-fit: cover;
+}
+
+.gallery-content {
+    padding: 20px;
+    width: 50%; /* Responsive width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styling */
+.gallery-button {
+    background-color: white;
+    color: #218838;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery-card {
+        flex-direction: column; /* Stack elements vertically on tablets and small desktops */
+        margin-left: 10px; /* Reduce margin */
+        width: 100%; /* Full width */
+    }
+
+    .gallery-card img {
+        width: 100%; /* Full width for images */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .gallery-content {
+        width: 100%; /* Full width for content */
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .gallery-button {
+        font-size: 14px; /* Smaller font size on smaller screens */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-card {
+        margin-left: 5px; /* Further reduce margin on mobile devices */
+    }
+
+    .gallery-card img {
+        height: auto; /* Maintain aspect ratio */
+        max-height: 200px; /* Limit height */
+    }
+
+    .gallery-content {
+        padding: 5px; /* Further reduce padding */
+    }
+
+    .gallery-button {
+        font-size: 12px; /* Smaller font size on mobile devices */
+        padding: 8px 12px; /* Adjust padding */
+    }
+}
+
+/* Container for side-by-side layout */
+.cards-container-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px; /* Space between the cards */
+  }
+  
+  /* Research Paper Card (White background) */
+  .research-paper-card {
+    flex: 1; /* 50% width */
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .research-paper-card:hover{
+    color: #218838;
+    background-color: white;
+  }
+  
+  /* References Card (Green background) */
+  .references-card {
+    flex: 1; /* 50% width */
+    background-color: #ffffff; /* Replace this with your website's green color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .references-card h2{
+    color: #006400;
+  }
+  
+  /* Buttons */
+  .read-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for buttons */
+  .read-more-btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Make text readable in green card */
+ 
+  .references-card p, 
+  .references-card h2 {
+    color: #218838;
+  }
+
+
+  
+/* Footer Styles */
+.footer-container {
+    background-color: #218838;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+/* Link styles */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        margin-bottom: 10px;
+    }
+}
