@@ -1,5 +1,5 @@
 # TheIndianFarmer
-
+**Live Demo**: [TheIndianFarmer](https://theindianfarmer.netlify.app/)
 **TheIndianFarmer** is a web-based platform designed to provide farmers with crucial information and tools to improve agricultural practices and solve everyday farming challenges. The platform includes detailed information about:
 
 - Seed selection and related best practices
