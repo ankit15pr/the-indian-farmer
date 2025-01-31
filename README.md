@@ -16,9 +16,6 @@ The aim of the platform is to help farmers make informed decisions, increase pro
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
